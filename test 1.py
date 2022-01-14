@@ -8,5 +8,5 @@ def sum():
 
 result = sum()
 
-print(result)
+print(result) # this func is too long should reduce
 
