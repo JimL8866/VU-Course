@@ -10,6 +10,9 @@
 # x +=3
 # print(x)
 
+from operator import truediv
+
+
 my_breakfast=["apple", "milk","bacon","water"]
 # print(my_breakfast)
 # print(my_breakfast.count("milk"))
@@ -54,5 +57,32 @@ print(newlist)
 #     i +=1
 
 string = "myString"
-for char in string:
-    print(char)
+# for char in string:
+#     print(char)
+
+# for char in string:
+#     print(char)
+#     if char == "i":
+#         break
+
+my_breakfast=["apple", "milk","bacon","water","Too much"]
+num=int(input("pleaes put a number"))
+if num < len(my_breakfast)-1:
+    print (my_breakfast[num])
+else:
+    print("try again")
+
+my_letter ="bundoor"
+for item in my_letter:
+    print(item)
+    for i in range(10):
+        print(i)
+i = 0
+while True:
+    i = i + 1
+    print(i)
+    num = input("put a number")
+    if num =="q":
+        break
+    else:
+        continue
