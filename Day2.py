@@ -47,8 +47,12 @@ print(newlist)
 # else:
 #     print("You are younger. Well done")
 
-int1 = int(input("what is your number"))
-i = 0
-while i <5: 
-    print(int1)
-    i +=1
+# int1 = int(input("what is your number"))
+# i = 0
+# while i <5: 
+#     print(int1+1)
+#     i +=1
+
+string = "myString"
+for char in string:
+    print(char)
