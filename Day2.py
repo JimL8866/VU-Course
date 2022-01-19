@@ -103,19 +103,35 @@
 #     else:
 #         print("old number")
 
-# mod(10)
+# # mod(10)
 
-num1 = int(input("please put a number"))
-num2 = float(input("please put another number"))
+# num1 = int(input("please put a number"))
+# num2 = float(input("please put another number"))
 
-# def add():
-#     return num1 + num2
+# # def add():
+# #     return num1 + num2
 
-# result = add()
+# # result = add()
 
-# print(result)
+# # print(result)
 
-def add(num1, num2):
-    print(num1 + num2)
+# def add(num1, num2):
+#     print(num1 + num2)
 
-add(num1, num2)
+# add(num1, num2)
+
+
+
+# def mod(num):
+#     result = num % 2
+#     if result == 0:
+#         print("even number")
+#     else:
+#         print("old number")
+
+def add_number(foo):
+   bar = 15
+   print(bar + foo)
+
+bar = 20
+add_number(5)
