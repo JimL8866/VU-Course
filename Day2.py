@@ -108,9 +108,14 @@
 num1 = int(input("please put a number"))
 num2 = float(input("please put another number"))
 
-def add():
-    return num1 + num2
+# def add():
+#     return num1 + num2
 
-result = add()
+# result = add()
 
-print(result)
+# print(result)
+
+def add(num1, num2):
+    print(num1 + num2)
+
+add(num1, num2)
