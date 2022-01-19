@@ -96,10 +96,21 @@
 
 # mutiple(5)
 
-def mod(num):
-    result = num % 2
-    if result == 0:
-        print("even number")
+# def mod(num):
+#     result = num % 2
+#     if result == 0:
+#         print("even number")
+#     else:
+#         print("old number")
 
+# mod(10)
 
-mod(10)
+num1 = int(input("please put a number"))
+num2 = float(input("please put another number"))
+
+def add():
+    return num1 + num2
+
+result = add()
+
+print(result)
