@@ -77,6 +77,7 @@ for item in my_letter:
     print(item)
     for i in range(10):
         print(i)
+
 i = 0
 while True:
     i = i + 1
