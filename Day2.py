@@ -129,9 +129,9 @@
 #     else:
 #         print("old number")
 
-# def add_number(foo):
-#    bar = 15
-#    print(bar + foo)
+def add_number(foo):
+   bar = 15
+   print(bar + foo)
 
-# add_number(5)
+add_number(5)
 

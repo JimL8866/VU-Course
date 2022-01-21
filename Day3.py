@@ -26,6 +26,18 @@ from operator import floordiv
 #         print(i)
 
 
+# reverse function:
+
+
+# for bar in range(10):
+#     print(bar)
+#     for foo in reversed(range(10)):
+#         print(foo)
+
+
+
+
+
 # myList = ["item1", "item2", "item3", "item4"]
 
 # if "item1" in myList:
@@ -53,3 +65,4 @@ while guess_game:
     if int(num) == 3:
         print("You got it!")
         guess_game = False
+
