@@ -33,14 +33,17 @@ NUMBER = 10
 guess = True
 
 while guess:
-    user_question = int(input("Please put a number?"))
-    if user_question > NUMBER:
-        print("Your number is too high")
-    elif user_question < NUMBER:
-        print("Your number is too low")
-    else:
-        print("That's correct!")
-        guess = False
+    try:
+        user_question = int(input("Please put a number?"))
+        if user_question > NUMBER:
+            print("Your number is too high")
+        elif user_question < NUMBER:
+            print("Your number is too low")
+        else:
+            print("That's correct!")
+            guess = False
+    except ValueError:
+        print("Warning ! Put a number not a world or character")
 
 # x = ["a", "b", "c", "d"]
 # print(len(x))
