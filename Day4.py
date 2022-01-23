@@ -28,22 +28,22 @@
 # print(add(5))
 
 
-NUMBER = 10
+# NUMBER = 10
 
-guess = True
+# guess = True
 
-while guess:
-    try:
-        user_question = int(input("Please put a number?"))
-        if user_question > NUMBER:
-            print("Your number is too high")
-        elif user_question < NUMBER:
-            print("Your number is too low")
-        else:
-            print("That's correct!")
-            guess = False
-    except ValueError:
-        print("Warning ! Put a number not a world or character")
+# while guess:
+#     try:
+#         user_question = int(input("Please put a number?"))
+#         if user_question > NUMBER:
+#             print("Your number is too high")
+#         elif user_question < NUMBER:
+#             print("Your number is too low")
+#         else:
+#             print("That's correct!")
+#             guess = False
+#     except ValueError:
+#         print("Warning ! Put a number not a world or character")
 
 # x = ["a", "b", "c", "d"]
 # print(len(x))
@@ -52,3 +52,17 @@ while guess:
 
 # for char in x:
 #     print(char)
+
+# import random
+
+# print(random.randrange(0,10))
+
+
+import random
+
+random_number = random.randint(1, 6)
+
+def dice():
+    return random_number
+
+print(dice())
