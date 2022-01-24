@@ -58,11 +58,17 @@
 # print(random.randrange(0,10))
 
 
-import random
+# import random
 
-random_number = random.randint(1, 6)
+# random_number = random.randint(1, 6)
 
-def dice():
-    return random_number
+# def dice():
+#     return random_number
 
-print(dice())
+# print(dice())
+
+import camelcase
+
+c = camelcase.CamelCase()
+txt = "hello world"
+print(c.hump(txt))
