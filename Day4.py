@@ -67,8 +67,48 @@
 
 # print(dice())
 
-import camelcase
+# import camelcase
 
-c = camelcase.CamelCase()
-txt = "hello world"
-print(c.hump(txt))
+# c = camelcase.CamelCase()
+# txt = "hello world"
+# print(c.hump(txt))
+
+# try:
+#     user_num = int(input("please put a number"))
+#     print(user_num / 0)
+# except ZeroDivisionError:
+#     print("You can't divide by 0")
+
+
+
+# try:
+#     string = "Bundoora"
+#     num = 5
+#     result = string + num
+#     print(result)
+
+# except TypeError:
+#     print("can only concatenate str to str")
+
+# with open("test.txt","r") as file:
+#     content = file.read()
+#     print(content)
+    
+# with open("test.txt","r") as file:
+#     content = file.readlines()
+#     print(content)
+#     print(content[2])
+
+# with open("test.txt","r") as file:
+#     content = file.read()
+#     print(content)
+
+# my_list = content.split()
+# print(my_list)
+
+# for i in my_list:
+#     print (i)
+
+with open("myFile.txt", "w") as File:
+    content = File.write("this has been written")
+    print(content)
