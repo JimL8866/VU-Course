@@ -154,3 +154,19 @@ import os
 
 if os.path.exists("myFile.txt"):
     print("file exists")
+
+while True:
+    try:
+        user_number_a = input("Please put a number\n")
+        user_number_b = input("Please put another number\n")
+        if user_number_a == "q" or user_number_b == "q":
+            print("q for exit. See you later")
+            break
+        elif int(user_number_a) > int(user_number_b):
+            print(f"The larger number is {user_number_a}.")
+        elif int(user_number_a) < int(user_number_b):
+            print(f"The larger number is {user_number_b}.")
+        else:
+            print("they are equal")
+    except ValueError:
+        print("Please put a number only to try again or 'q' for exit.")
