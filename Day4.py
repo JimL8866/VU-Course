@@ -109,6 +109,48 @@
 # for i in my_list:
 #     print (i)
 
-with open("myFile.txt", "w") as File:
-    content = File.write("this has been written")
-    print(content)
+# with open("myFile.txt", "w") as File:
+#     content = File.write("this has been written")
+#     print(content)
+
+
+
+# game = True
+# def add(num1, num2):
+#     return num1 + num2
+#
+# def sub(num1, num2):
+#     return num1 - num2
+#
+# def exit():
+#     global game
+#     game = False
+#
+# while game:
+#     try:
+#         user_choice = int(input("please chose 1, 2, 3\n"))
+#         if user_choice == 1:
+#             num1 = int(input("please put a number"))
+#             num2 = int(input("please put another number"))
+#             result = add(num1, num2)
+#             print(result)
+#         elif user_choice == 2:
+#             num1 = int(input("please put a number"))
+#             num2 = int(input("please put another number"))
+#             result = sub(num1, num2)
+#             print(result)
+#         elif user_choice == 3:
+#             exit()
+#     except ValueError:
+#         print("You press the wrong button")
+
+
+# num1 = int(input("please put number 1\n"))
+# num2 = int(input("please put number 2\n"))
+# num3 = int(input("please put number 3\n"))
+# print (f"{num1: <10}{num2:^10}{num3:>10}")
+
+import os
+
+if os.path.exists("myFile.txt"):
+    print("file exists")
