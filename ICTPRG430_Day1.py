@@ -43,32 +43,56 @@
 # window.exitonclick()
 
 
-class Shirt:
-    def __init__(self, colour, name, length):
-        self.colour = colour
-        self.name = name
-        self.length = length
-        self.wear = False
+# class Shirt:
+#     def __init__(self, colour, name, length):
+#         self.colour = colour
+#         self.name = name
+#         self.length = length
+#         self.wear = False
 
-    def put_on(self):
-        print("put on a shirt")
-        self.wear = True
+#     def put_on(self):
+#         print("put on a shirt")
+#         self.wear = True
     
-    def take_off(self):
-        print("take off your shirt")
-        self.wear = False
+#     def take_off(self):
+#         print("take off your shirt")
+#         self.wear = False
 
 
-my_shirt = Shirt("black", "monday", "medium")
-my_shirt.put_on()
-print(my_shirt.wear)
-print(id(my_shirt))
-my_shirt.colour = "green"
-print(id(my_shirt))
+# my_shirt = Shirt("black", "monday", "medium")
+# my_shirt.put_on()
+# print(my_shirt.wear)
+# print(id(my_shirt))
+# my_shirt.colour = "green"
+# print(id(my_shirt))
 
-child_shirt = Shirt("purple", "tuesday", "small")
-child_shirt.take_off()
-print(child_shirt.wear)
-print(id(child_shirt))
-child_shirt.colour = "red"
-print(id(child_shirt))
+# child_shirt = Shirt("purple", "tuesday", "small")
+# child_shirt.take_off()
+# print(child_shirt.wear)
+# print(id(child_shirt))
+# child_shirt.colour = "red"
+# print(id(child_shirt))
+
+# list is mutable
+my_list = [1, 2, 3, 4]
+print(id(my_list))
+
+my_list.append(5)
+print(id(my_list))
+
+my_num_list = [1, 2, 3, 4]
+print(my_num_list)
+print(id(my_num_list))
+my_num_list_1 = my_num_list
+print(id(my_num_list_1))
+my_num_list.append(10)
+print(my_num_list)
+print(id(my_num_list))
+print(id(my_num_list_1))
+
+# string is unmutable so has to create a new object
+my_string = "hello"
+print(id(my_string))
+my_string = "hello" + "world"
+print(my_string)
+print(id(my_string))
