@@ -98,28 +98,51 @@
 # print(id(my_string))
 
 ################################################################################################
-class Car:
-    def __init__(self, speed, colour) -> None:
-        self.speed = speed
-        self.colour = colour
+# class Car:
+#     def __init__(self, speed, colour) -> None:
+#         self.speed = speed
+#         self.colour = colour
 
-honda = Car(150, "red")
-toyota = Car(220,"blue")
-bmw = Car(250, "yellow")
+# honda = Car(150, "red")
+# toyota = Car(220,"blue")
+# bmw = Car(250, "yellow")
 
-print(honda.speed)
-print(toyota.speed)
-print(bmw.speed)
+# print(honda.speed)
+# print(toyota.speed)
+# print(bmw.speed)
 
-honda.speed = 1000
-print(honda.speed)
-
-
-class Students:
-    def __init__(self, *args, **kwargs) -> None:
-        print(args, kwargs)
+# honda.speed = 1000
+# print(honda.speed)
 
 
-jim = Students("Jim", 25, "Chinese", shirt= "blue")
-alex = Students("Alex", 30 , "American", shirt="red")
-julie = Students("Julie", 28, "Australian", shirt="purple")
+# class Students:
+#     def __init__(self, *args, **kwargs) -> None:
+#         print(args, kwargs)
+
+
+# jim = Students("Jim", 25, "Chinese", shirt= "blue")
+# alex = Students("Alex", 30 , "American", shirt="red")
+# julie = Students("Julie", 28, "Australian", shirt="purple")
+
+#######################################################################
+
+class Book:
+    def __init__(self, title, author):
+        self.title = title
+        self.author = author
+
+    def display(self):
+        print(f"""
+            The title of the book is {self.title}.
+            The author of the book is {self.author}.
+        """)
+
+
+python_learning = Book("Python for beginner", "Jim Liu")
+python_learning.display()
+
+python_learning.title = "Java for beginner"
+python_learning.author = "Julie Jin"
+python_learning.display()
+
+help(Book)
