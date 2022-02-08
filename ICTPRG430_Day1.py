@@ -74,25 +74,52 @@
 # print(id(child_shirt))
 
 # list is mutable
-my_list = [1, 2, 3, 4]
-print(id(my_list))
+# my_list = [1, 2, 3, 4]
+# print(id(my_list))
 
-my_list.append(5)
-print(id(my_list))
+# my_list.append(5)
+# print(id(my_list))
 
-my_num_list = [1, 2, 3, 4]
-print(my_num_list)
-print(id(my_num_list))
-my_num_list_1 = my_num_list
-print(id(my_num_list_1))
-my_num_list.append(10)
-print(my_num_list)
-print(id(my_num_list))
-print(id(my_num_list_1))
+# my_num_list = [1, 2, 3, 4]
+# print(my_num_list)
+# print(id(my_num_list))
+# my_num_list_1 = my_num_list
+# print(id(my_num_list_1))
+# my_num_list.append(10)
+# print(my_num_list)
+# print(id(my_num_list))
+# print(id(my_num_list_1))
 
-# string is unmutable so has to create a new object
-my_string = "hello"
-print(id(my_string))
-my_string = "hello" + "world"
-print(my_string)
-print(id(my_string))
+# # string is unmutable so has to create a new object
+# my_string = "hello"
+# print(id(my_string))
+# my_string = "hello" + "world"
+# print(my_string)
+# print(id(my_string))
+
+################################################################################################
+class Car:
+    def __init__(self, speed, colour) -> None:
+        self.speed = speed
+        self.colour = colour
+
+honda = Car(150, "red")
+toyota = Car(220,"blue")
+bmw = Car(250, "yellow")
+
+print(honda.speed)
+print(toyota.speed)
+print(bmw.speed)
+
+honda.speed = 1000
+print(honda.speed)
+
+
+class Students:
+    def __init__(self, *args, **kwargs) -> None:
+        print(args, kwargs)
+
+
+jim = Students("Jim", 25, "Chinese", shirt= "blue")
+alex = Students("Alex", 30 , "American", shirt="red")
+julie = Students("Julie", 28, "Australian", shirt="purple")
