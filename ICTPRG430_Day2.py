@@ -86,7 +86,7 @@ class Microwave(Appliance):
         self.weight = weight
 
     def func(self):
-        super().func()
+        Appliance.func(self)
         print(f"{self.name} can make meals hot")
 
 
