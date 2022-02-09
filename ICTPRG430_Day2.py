@@ -49,3 +49,20 @@ my_computer = Computer("Lenovo", 1000)
 print(my_computer._Computer__value)
 
 my_computer.get_value()
+
+#################################################
+class Phone:
+    def __init__(self, name, brand):
+        self.name = name
+        self.__brand = None
+
+    def set_value(self):
+        self.__brand = "iphone"
+
+    def get_value(self):
+        return self.__brand
+
+
+my_phone = Phone("Jim's phone", "iphone")
+my_phone.set_value()
+print(my_phone.get_value())
