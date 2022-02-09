@@ -70,7 +70,7 @@
 
 ##################################################
 
-class Appliance:
+class Appliance(object):
     def __init__(self, name, colour):
         self.name = name
         self.colour = colour
@@ -94,3 +94,4 @@ my_fridge = Microwave("500", "100KG")
 my_fridge.func()
 print(my_fridge.name)
 print(my_fridge.colour)
+print(Microwave.__mro__)
