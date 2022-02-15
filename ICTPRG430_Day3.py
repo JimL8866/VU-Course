@@ -95,3 +95,28 @@ class BaseClass2:
 obj1 = BaseClass()
 obj2 = BaseClass2(obj1)
 obj2.display()
+
+###################################################################
+
+class MyList:
+    def __init__(self, mylist):
+        self.mylist = mylist
+
+    def display(self):
+        return self.mylist
+
+
+my_list = MyList([1, 2, 3, 4])
+print(my_list.display())
+
+
+class MyDict:
+    def __init__(self, **kwargs):
+        self.mydictionary = kwargs
+
+    def display(self):
+        return self.mydictionary
+
+
+my_dictionary = MyDict(name="jim", age="35", mobile="0430")
+print(my_dictionary.display())
