@@ -98,35 +98,85 @@ obj2.display()
 
 ###################################################################
 
-class MyList:
-    def __init__(self, mylist):
-        self.mylist = mylist
+# class MyList:
+#     def __init__(self, mylist):
+#         self.mylist = mylist
+
+#     def display(self):
+#         return self.mylist
+
+#     def display_item(self):
+#         for item in self.mylist:
+#             print(item)
+
+
+# my_list = MyList([1, 2, 3, 4])
+# print(my_list.display())
+# my_list.display_item()
+
+
+# class MyDict:
+    
+#     def __init__(self, **kwargs):
+#         self.mydictionary = kwargs
+
+#     def display(self):
+#         return self.mydictionary
+
+#     def display_item(self):
+#         for (i, v) in self.mydictionary.items():
+#             print(i, v)
+
+
+# my_dictionary = MyDict(name="jim", age="35", mobile="0430")
+# print(my_dictionary.display())
+# my_dictionary.display_item()
+
+############################################################################
+# import random
+# random.randint(1,10)
+
+# print(random.randint.__doc__)
+
+##################################################
+class Book:
+    """
+     A class to represent a book.
+     
+     Attributes
+    ----------
+    title : str
+        The title of the book
+    author : str
+        The author of the book
+    
+    Methods
+    -------
+    display():
+        Prints the book's title and author.
+    """
+    
+    def __init__(self, title, author):
+        """
+         Constructs all the necessary attributes for the book object.
+
+        Args:
+            self (undefined): instance/object of the Book class
+            title (undefined): instance variable named "title"
+            author (undefined): instance variable named "author"
+
+        """
+        self.title = title
+        self.author = author
 
     def display(self):
-        return self.mylist
-
-    def display_item(self):
-        for item in self.mylist:
-            print(item)
-
-
-my_list = MyList([1, 2, 3, 4])
-print(my_list.display())
-my_list.display_item()
+        """
+        instance method used to display two instance variables: "title", "author".
+        
+        """
+        print(f"This book is called {self.title}.")
+        print(f"The author of this book is {self.author}")
 
 
-class MyDict:
-    def __init__(self, **kwargs):
-        self.mydictionary = kwargs
-
-    def display(self):
-        return self.mydictionary
-
-    def display_item(self):
-        for (i, v) in self.mydictionary.items():
-            print(i, v)
-
-
-my_dictionary = MyDict(name="jim", age="35", mobile="0430")
-print(my_dictionary.display())
-my_dictionary.display_item()
+book = Book("Welcome to Australia", "JL")
+book.display()
