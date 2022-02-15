@@ -105,9 +105,14 @@ class MyList:
     def display(self):
         return self.mylist
 
+    def display_item(self):
+        for item in self.mylist:
+            print(item)
+
 
 my_list = MyList([1, 2, 3, 4])
 print(my_list.display())
+my_list.display_item()
 
 
 class MyDict:
@@ -117,6 +122,11 @@ class MyDict:
     def display(self):
         return self.mydictionary
 
+    def display_item(self):
+        for (i, v) in self.mydictionary.items():
+            print(i, v)
+
 
 my_dictionary = MyDict(name="jim", age="35", mobile="0430")
 print(my_dictionary.display())
+my_dictionary.display_item()
