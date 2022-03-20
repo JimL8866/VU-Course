@@ -1,3 +1,30 @@
+<!--
+1.	A title in the page tab
+2.	A h1 heading with a default size of 40px and, with a paragraph element containing some text under it
+3.	A h2 heading with a paragraph element containing some text under it
+4.	A paragraph of text separated by five white spaces between each word and the following style - font size:24px, type:Arial, color:blue (use RGB() to create the color)
+a.	Change a single word in the paragraph to superscript
+b.	Change a single word in the paragraph to bold
+5.	Place a horizontal rule on the page
+6.	Add a style using an external css file that includes a background color, h1 color and paragraph font color, font-size and font-family. (Note the h2 paragraph style should remain)
+7.	A URL that opens in a new tab 
+8.	An image of a specific height and width
+9.	Make the image a link that opens in the same window it was clicked in 
+10.	Add an image to a paragraph element. The image should not repeat
+11.	Add an image that covers the entire background. Use a external css file entry to do this
+12.	A Table with 3 rows x 2 columns, a border around all cells and, a header. Apply the style from an external css file
+13.	An ordered list
+14.	Use <span> to apply a font size and color to some text in a paragraph element
+15.	Two separate <div> blocks. One with a <h3> and <p> element and the other with a <h4> and <p> element. Place differing font colors that apply to each <div> block.
+16.	Create a class in an external css file and apply that class to a <div> element
+17.	An external webpage within an Iframe
+18.	JavaScript in the <body> that adds text to a paragraph element. (Add an id to a paragraph element and use 'getElementById()' to add text to the paragraph element)
+19.	Javascript in the <body> that writes some text into an existing <p> element and colors that text 'blue'
+20.	A 'text' type form with at least three fields and a submit button. Include default values for two fields only. The form data should be uploaded to a form handler titled 'process.php'
+21.	A 'radio button' type form with at least three radio buttons that all belong to the same group titled 'myGroup'
+22.	A <canvas> element that has a line drawn from top to bottom in the centre of the canvas
+-->
+
 <!DOCTYPE html>
 <html lang="en-AU">
 
@@ -45,7 +72,7 @@
         <li>test3</li>
     </ol>
     <hr>
-    <div class="d3" >
+    <div class="d3">
         <h3>heading 3</h3>
         <p class="p3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
     </div>
@@ -54,13 +81,15 @@
         <p> Pellentesque diam volutpat commodo sed egestas egestas</P>
     </div>
     <iframe src="https://www.youtube.com/embed/BM4CHBmAPh4" width=900 height=500 style="border:10px solid black">
-        </iframe>
+    </iframe>
     <hr>
     <form action="process.php" method="post">
         <label for="fname" class="form1">First Name:</label><br>
-        <input class="form1" type="text" id="fname" name="fname" placeholder="Please put in your first name" value="jim" autofocus><br>
+        <input class="form1" type="text" id="fname" name="fname" placeholder="Please put in your first name" value="jim"
+            autofocus><br>
         <label for="lname" class="form1">Last Name:</label><br>
-        <input class="form1" typle="text" id="lname" name="lname" placeholder="Please put in your Last name" value="liu"><br>
+        <input class="form1" typle="text" id="lname" name="lname" placeholder="Please put in your Last name"
+            value="liu"><br>
         <label class="form1" for="address">Address:</label><br>
         <input class="form1" type="text" id="address" name="address" placeholder="Please put in your address"><br>
         <input type="submit" value="submit">
@@ -68,14 +97,13 @@
     <hr>
     <form>
         <p class="form2">What is your favourite color? </p> <br>
-        <input type="radio" id="white" name="color"> 
-        <label for="white" class="form2"> White </label> 
+        <input type="radio" id="white" name="color">
+        <label for="white" class="form2"> White </label>
         <input type="radio" id="blue" name="color">
         <label for="blue" class="form2">Blue </label>
         <input type="radio" id="yellow" name="color">
         <label for="yellow" class="form2">Yellow </label><br>
         <input class="form2" type="submit" value="submit">
-
     </form>
 
 
