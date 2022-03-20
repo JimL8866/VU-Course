@@ -1,0 +1,65 @@
+body {
+    background-color : purple;
+}
+
+h1 {
+    color : orange;
+}
+
+p {
+    color: green;
+    font-size: 100px;
+    font-family: monospace;
+}
+
+
+.d1 {
+    background-image:url(/static/image/bg.jpeg);
+    background-size:cover;
+}
+
+table {
+    margin-top:20px;
+    width: 1000px;
+}
+
+table th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+    font-size:50px;
+    
+
+}
+
+th,td {
+    border-radius: 30px;
+    padding:30px;
+    text-align:left;
+}
+
+th:hover {
+    color: yellow;
+
+}
+
+.d3 {
+    color: rgb(201,121,33); 
+    font-size:30px;
+    background-color: rgb(255,255,255);
+}
+
+.p3 {
+    color: rgb(19, 197, 173); 
+    font-size: 35px;
+}
+
+.form1 {
+
+    font-size:20px;
+}
+
+.form2 {
+
+    font-size:40px;
+
+}
