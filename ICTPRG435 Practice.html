@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <label for="m">Enter value of m:</label>
+  <input type="text" id="m" >
+
+  <label for="n">Enter value of n:</label>
+  <input type="text" id="n" >
+  
+  <button onclick="dispaly()">Swap m and n</button>
+    <p id="initial value 1"><p>
+    <p id="initial value 2"><p>
+    <p id="after value 1"><p>
+    <p id="after value 2"><p>
+
+
+
+<script>
+
+    var dispaly = () => {
+        let x = document.getElementById("m").value;
+        let y = document.getElementById("n").value; 
+        document.getElementById("initial value 1").innerHTML=`You have input m is ${x}`
+        document.getElementById("initial value 2").innerHTML=`You have input n is ${y}`
+        let temp =""
+        temp = x
+        x = y
+        y = temp
+        document.getElementById("after value 1").innerHTML=`The value of m now is ${x}`
+        document.getElementById("after value 2").innerHTML=`The value of n now is ${y}`
+    }
+
+
+
+</script>
+
+</body>
+</html>
