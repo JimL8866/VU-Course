@@ -15,11 +15,12 @@
   <input type="text" id="n" >
   
   <button onclick="dispaly()">Swap m and n</button>
-    <p id="initial value 1"><p>
+    <p id="initial value 1" style="background-color:red"><p>
     <p id="initial value 2"><p>
     <p id="after value 1"><p>
     <p id="after value 2"><p>
-
+    <p id ="test"> test test </p>
+<button onclick="test()"> test </p>    
 
 
 <script>
@@ -37,8 +38,24 @@
         document.getElementById("after value 2").innerHTML=`The value of n now is ${y}`
     }
 
+    var test = () => {
+        var m = "string"
+        x = document.getElementById("test").innerHTML + m;
+        console.log(x)
+    }
+
+    var myList = document.querySelectorAll("p")
+        console.log(myList)
+        myList[8].style.backgroundColor ="red"
 
 
+    document.addEventListener("click", popup)
+
+    function popup() {
+        alert("Hello world!")
+    }
+
+    
 </script>
 
 </body>

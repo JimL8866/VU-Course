@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    
+    <body>
+        <label for="color">Please chose a color </label>
+        <input type="color" id="color" name="color">
+        <p id="text" style="color:orange;">Today is Wednesday<p>
+        <button id="button">Change Color</button>
+    
+    
+            <script>
+        
+                document.getElementById("button").addEventListener("click", changeColor)
+
+                document.getElementById("button").addEventListener("dblclick", changeback) 
+                
+                 textColor =document.getElementById("text").style.color;
+                 
+                
+                function changeColor () {
+
+                    color = document.getElementById("color").value 
+                    console.log(color)
+
+                    document.getElementById("text").style.color = color
+
+                }
+
+               
+
+                function changeback () {
+
+                    document.getElementById("text").style.color = textColor
+
+                }
+            
+            </script>
+
+
+    </body>
+</html>
+
+
+
+
+
