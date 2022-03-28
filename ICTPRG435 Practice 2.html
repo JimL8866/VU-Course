@@ -17,7 +17,7 @@
     <p id="text" style="color:orange;">Today is Wednesday<p>
             <button id="button">Change Color</button>
 
-            <script>
+            <!-- <script>
                 var textColor = document.getElementById("text").style.color
 
                 document.getElementById("button").addEventListener("click", () => {
@@ -28,7 +28,27 @@
                 document.getElementById("button").addEventListener("dblclick", () => {
                     document.getElementById("text").style.color = textColor
                 })
+            </script> -->
+
+            <script>
+                let originalColor = document.querySelector("#text").style.color
+
+                let userColor = "";
+                let selectColor = document.querySelector("#color");
+                selectColor.addEventListener("change", myFunction);
+
+                function myFunction() {
+                    userColor = selectColor.value
+                }
+
+                document.querySelector("button").addEventListener("click", function () {
+
+                    document.querySelector("#text").style.color = userColor
+                })
+
+                document.querySelector("button").addEventListener("dblclick", () => document.querySelector("#text").style.color = originalColor )
             </script>
+
 
 
 </body>
