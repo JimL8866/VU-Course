@@ -1,0 +1,61 @@
+<!-- Common input elements for a user interface -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="test.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+</head>
+<body>       
+ 
+    <h1 id="heading" style = "color:green">Drawing Canvas</h1>
+    <div >
+        <canvas id="myCanvas" width="400" height="400" style="border:2px solid #d3d3d3;"></canvas>    
+    </div>    
+  
+    <!-- color palette -->
+    <div >
+        <input type="color" id="palette" name="palette" 
+               value="#e66465">
+        <label for="palette">Fill color</label>
+    </div>
+    
+        <!-- range slider -->
+    <div >
+      <input type="range" id="slider" name="slider"
+             min="0" max="100">
+      <label for="slider">Slider</label>
+    </div>
+
+    <!-- Number field -->
+    <div >
+      <label for="number">Number</label>
+      <input type="number" id="number" name="Number"
+             min="0" max="100">
+    </div>
+
+    <!-- select -->
+    <div >
+      <label for="Shapes">Choose a shape:</label>
+      <select name="shapes" id="shapes">
+        <option value="square">square</option>
+        <option value="circle">circle</option>
+      </select>
+    </div>
+
+    <!-- check box  -->
+    <div>
+      <input type="checkbox" id="linearFill" name="linearFill" value="linear">
+      <label for="linearFill"> Linear Gradient Fill</label><br>
+     </div>
+
+     <!-- a button -->
+    <div >
+      <button id="draw">Draw</button>        
+    </div>
+
+        <script src = "test.js"> </script>
+</body>
+</html>
