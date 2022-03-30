@@ -110,7 +110,7 @@ draw.addEventListener("click",drawPattern);
 let canvas = document.getElementById("myCanvas");
 let ctx = canvas.getContext("2d");
 
-function drawPattern() {;
+function drawPattern() {
 
     let x = document.querySelector("#x").value;
     console.log(x);
@@ -132,13 +132,13 @@ function drawPattern() {;
     ctx.fill();
     ctx.stroke();
 
-};
+}
 
 let resetButton = document.querySelector("#btn2");
 resetButton.addEventListener("click",restDrawing);
 
-function restDrawing(){;
+function restDrawing(){
     
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-};
+}
