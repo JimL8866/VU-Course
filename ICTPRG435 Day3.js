@@ -105,40 +105,40 @@
 
 let draw = document.querySelector("#btn");
 
-draw.addEventListener("click",drawPattern)
+draw.addEventListener("click",drawPattern);
 
 let canvas = document.getElementById("myCanvas");
 let ctx = canvas.getContext("2d");
 
-function drawPattern() {
+function drawPattern() {;
 
-    let x = document.querySelector("#x").value
-    console.log(x)
+    let x = document.querySelector("#x").value;
+    console.log(x);
 
-    let y = document.querySelector("#y").value
-    console.log(y)
+    let y = document.querySelector("#y").value;
+    console.log(y);
 
-    let xx = document.querySelector("#xx").value
-    console.log(x)
+    let xx = document.querySelector("#xx").value;
+    console.log(x);
 
-    let yy = document.querySelector("#yy").value
-    console.log(y)
+    let yy = document.querySelector("#yy").value;
+    console.log(y);
 
 
-    ctx.beginPath()
+    ctx.beginPath();
     ctx.strokeStyle = "blue";
     ctx.moveTo(x, y);
     ctx.lineTo(xx, yy);
-    ctx.fill()
+    ctx.fill();
     ctx.stroke();
 
-}
+};
 
 let resetButton = document.querySelector("#btn2");
-resetButton.addEventListener("click",restDrawing)
+resetButton.addEventListener("click",restDrawing);
 
-function restDrawing(){
+function restDrawing(){;
     
-    ctx.clearRect(0, 0, canvas.width, canvas.height)
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-}
+};
