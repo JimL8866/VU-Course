@@ -103,42 +103,98 @@
 // }
 
 
-let draw = document.querySelector("#btn");
+// let draw = document.querySelector("#btn");
 
-draw.addEventListener("click",drawPattern);
+// draw.addEventListener("click",drawPattern);
 
-let canvas = document.getElementById("myCanvas");
-let ctx = canvas.getContext("2d");
+// let canvas = document.getElementById("myCanvas");
+// let ctx = canvas.getContext("2d");
 
-function drawPattern() {
+// function drawPattern() {
 
-    let x = document.querySelector("#x").value;
-    console.log(x);
+//     let x = document.querySelector("#x").value;
+//     console.log(x);
 
-    let y = document.querySelector("#y").value;
-    console.log(y);
+//     let y = document.querySelector("#y").value;
+//     console.log(y);
 
-    let xx = document.querySelector("#xx").value;
-    console.log(x);
+//     let xx = document.querySelector("#xx").value;
+//     console.log(x);
 
-    let yy = document.querySelector("#yy").value;
-    console.log(y);
+//     let yy = document.querySelector("#yy").value;
+//     console.log(y);
 
 
-    ctx.beginPath();
-    ctx.strokeStyle = "blue";
-    ctx.moveTo(x, y);
-    ctx.lineTo(xx, yy);
-    ctx.fill();
-    ctx.stroke();
+//     ctx.beginPath();
+//     ctx.strokeStyle = "blue";
+//     ctx.moveTo(x, y);
+//     ctx.lineTo(xx, yy);
+//     ctx.fill();
+//     ctx.stroke();
 
-}
+// }
 
-let resetButton = document.querySelector("#btn2");
-resetButton.addEventListener("click",restDrawing);
+// let resetButton = document.querySelector("#btn2");
+// resetButton.addEventListener("click",restDrawing);
 
-function restDrawing(){
+// function restDrawing(){
     
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+//     ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+// }
+
+// let x = document.querySelector("#startX")
+
+// x.addEventListener("change",function(){
+
+//  if(x.value >400) {
+//     alert("x value can't be large than 400")
+//  }
+//   else {
+//       console.log(x.value)
+//   }
+// })
+
+// let y = document.querySelector("#startY");
+
+// y.addEventListener("change",function(){
+
+//  if(y.value >400) {
+//     alert("y value can't be large than 400")
+//  }
+//   else {
+//       console.log(y.value)
+//   }
+// })
+
+
+
+//get p color value 
+let p = document.querySelector("#text")
+const textColor = p.style.color
+
+
+// console.log(textColor)
+
+
+
+//click button
+
+const btn = document.querySelector("#button")
+
+btn.addEventListener("click", changeColor)
+
+function changeColor(){
+
+   //get user color value
+    let input = document.querySelector("#color")
+    let inputColor = input.value
+    p.style.color = inputColor
 
 }
+
+btn.addEventListener("dblclick", () =>{
+
+    p.style.color = textColor
+
+})
